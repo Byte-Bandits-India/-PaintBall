@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-barlow), system-ui, sans-serif;
+  --font-saira: var(--font-saira-condensed), sans-serif;
+  --font-chakra: var(--font-chakra-petch), monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+@keyframes bgPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes heroUp {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-slow {
+  animation: bgPulse 2s ease-in-out infinite;
+}
+
+.animate-hero-up {
+  animation: heroUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
