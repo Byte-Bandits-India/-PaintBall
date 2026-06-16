@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Fields from "@/components/Fields";
+import GamesAvailable from "@/components/GamesAvailable";
 import BentoShowcase from "@/components/BentoShowcase";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Pricing from "@/components/Pricing";
 import Programs from "@/components/Programs";
-import Tournaments from "@/components/Tournaments";
 import Coaches from "@/components/Coaches";
 import Amenities from "@/components/Amenities";
 import Testimonials from "@/components/Testimonials";
@@ -23,11 +23,11 @@ export default function Home() {
       <Navbar arenaName={arenaName} accent={accent} />
       <Hero heroHeadline={heroHeadline} accent={accent} />
       <Fields accent={accent} />
+      <GamesAvailable accent={accent} />
       <BentoShowcase accent={accent} />
       <WhyChooseUs accent={accent} />
       <Pricing accent={accent} />
       <Programs accent={accent} />
-      <Tournaments accent={accent} />
       <Coaches accent={accent} />
       <Amenities accent={accent} />
       <Testimonials accent={accent} />

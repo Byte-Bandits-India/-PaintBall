@@ -31,3 +31,12 @@ section[id] {
 .animate-hero-up {
   animation: heroUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Hide scrollbars for custom carousels */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
